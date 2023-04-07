@@ -1,3 +1,5 @@
+package main;
+
 import java.io.FileNotFoundException;
 
 /**
@@ -14,8 +16,8 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         StudentManager studentManager = new StudentManager();
         studentManager.createCoursesAndStudents(
-                System.getProperty("user.dir") + "/src/data/Courses.csv",
-                System.getProperty("user.dir") + "/src/data/Students.csv"
+                System.getProperty("user.dir") + ".src.main.data.Courses.csv",
+                System.getProperty("user.dir") + ".src.main.data.Students.csv"
         );
         System.out.println(studentManager);
     }

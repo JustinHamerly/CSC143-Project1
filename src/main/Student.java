@@ -1,3 +1,5 @@
+package main;
+
 /**
  * creates a Student object
  *
@@ -9,7 +11,7 @@
  */
 public record Student(String id, String lastName, String firstName, String email, String phone) {
     /**
-     * Student record precondition for any null arguments
+     * main.Student record precondition for any null arguments
      *
      * @throws IllegalArgumentException     when any parameter is null
      */
@@ -20,9 +22,9 @@ public record Student(String id, String lastName, String firstName, String email
     }
 
     /**
-     * checks for equality for all values in two Student objects
+     * checks for equality for all values in two main.Student objects
      *
-     * @param studentObj    a Student object to compare to this Student object
+     * @param studentObj    a main.Student object to compare to this main.Student object
      * @return boolean      true if all values match in both objects; otherwise false
      */
     public boolean equals(Student studentObj){

@@ -1,3 +1,5 @@
+package main;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -7,7 +9,7 @@ import java.util.Scanner;
  */
 public class StudentManager implements StudentManagerInterface {
     /**
-     * a two-dimensional array of Student objects
+     * a two-dimensional array of main.Student objects
      */
     private Student[][] studentsByCourse;
 
@@ -27,7 +29,7 @@ public class StudentManager implements StudentManagerInterface {
     private int totalStudentCount;
 
     /**
-     * the StudentManager constructor
+     * the main.StudentManager constructor
      */
     public StudentManager(){
         this.studentsByCourse = new Student[0][];
@@ -117,7 +119,7 @@ public class StudentManager implements StudentManagerInterface {
     }
 
     /**
-     * creates Student objects and fills in the students for every course
+     * creates main.Student objects and fills in the students for every course
      *
      * @param filePath                  the path to the students csv file
      * @throws FileNotFoundException    throws when the file path isn't found
@@ -144,7 +146,7 @@ public class StudentManager implements StudentManagerInterface {
     }
 
     /**
-     * calls createCourses followed by createStudents to load in all data from their respective file paths
+     * calls createCourses followed by createStudents to load in all main.data from their respective file paths
      *
      * @param courseFilePath            the path to the course csv file
      * @param studentFilePath           the path to the students csv file
@@ -158,7 +160,7 @@ public class StudentManager implements StudentManagerInterface {
     public String toString(){
         String smString = "";
         smString += "\n";
-        smString += "Student Manager Summary\n";
+        smString += "main.Student Manager Summary\n";
         smString += "Total Classes:  " + this.getCourseCount() + "\n";
         smString += "Total Students: " + this.getStudentCount() + "\n";
 

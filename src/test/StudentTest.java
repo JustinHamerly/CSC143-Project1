@@ -1,7 +1,11 @@
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+package test;
 
-class StudentTest {
+import main.Student;
+import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+
+public class StudentTest {
     Student testStudent = new Student(
             "12345",
             "Potter",
@@ -11,32 +15,32 @@ class StudentTest {
     );
 
     @Test
-    void id() {
+    public void id() {
         assert(testStudent.id().equals("12345"));
     }
 
     @Test
-    void lastName() {
+    public void lastName() {
         assert(testStudent.lastName().equals("Potter"));
     }
 
     @Test
-    void firstName() {
+    public void firstName() {
         assert(testStudent.firstName().equals("Harry"));
     }
 
     @Test
-    void email() {
+    public void email() {
         assert(testStudent.email().equals("harrypotter@theboywholived.co.wizards"));
     }
 
     @Test
-    void phone() {
+    public void phone() {
         assert(testStudent.phone().equals("555-WIZ-ARDS"));
     }
 
     @Test
-    void equals() {
+    public void equals() {
         Student testStudentIdentical = new Student(
                 "12345",
                 "Potter",
@@ -57,7 +61,7 @@ class StudentTest {
     }
 
     @Test
-    void checkNoNullEntries() {
+    public void checkNoNullEntries() {
 
         assertThrows(IllegalArgumentException.class, () -> new Student(
                 null,

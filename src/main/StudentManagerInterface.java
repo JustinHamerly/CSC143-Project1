@@ -1,11 +1,11 @@
-import java.util.Arrays;
+package main;
 
 /**
- * interface for the StudentManager class
+ * interface for the main.StudentManager class
  */
 public interface StudentManagerInterface {
 
-    // StudentManager should have one constructor, an empty one (no parameters)
+    // main.StudentManager should have one constructor, an empty one (no parameters)
 
     /**
      * Retrieves the count of courses
