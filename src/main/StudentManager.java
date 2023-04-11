@@ -160,7 +160,7 @@ public class StudentManager implements StudentManagerInterface {
     public String toString(){
         String smString = "";
         smString += "\n";
-        smString += "main.Student Manager Summary\n";
+        smString += "Student Manager Summary\n";
         smString += "Total Classes:  " + this.getCourseCount() + "\n";
         smString += "Total Students: " + this.getStudentCount() + "\n";
 
